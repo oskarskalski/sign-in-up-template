@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #666;
+}
+
+.page-main {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page-main__form-description, .page-main__form-operations {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-main__form-description {
+    width: 50%;
+    background: #333333;
+    color: #f2f2f2;
+}
+
+.form-description__sign-in-section, .form-description__sign-up-section {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.sign-in-section__content, .sign-up-section__content {
+    font-size: 18px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.sign-in-section__heading, .sign-up-section__heading {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.sign-in-container__go-to-sign-in-section, .sign-up-container__go-to-sign-up-section {
+    margin: 10px 5px 5px;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@keyframes display-off-animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.disabled-section {
+    animation: 0.4s display-off-animation;
+
+    display: none;
+    opacity: 0;
+}
+
+.page-main__form-operations {
+    left: 68%;
+}
+
+.form-operations__sign-in, .form-operations__sign-up {
+    padding: 10px;
+    background: #f2f2f2;
+    width: 35vw;
+    box-shadow: 0 0 5px 4px #333333;
+}
+
+.form-operations__sign-up {
+    left: -50%;
+}
+
+form {
+    line-height: 1.8;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+.frontForm {
+    width: 95%;
+}
+
+.sign-in__heading, .sign-up__heading {
+    margin: 10px;
+    padding-top: 20px;
+    color: #333333;
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    font-size: 20px;
+}
+
+.sign-in__submit, .sign-up__submit {
+    margin-top: 40px;
+    padding: 10px;
+    background: #333333;
+    color: #f2f2f2;
+}
+
+@keyframes move-in-animation {
+    from {
+        left: 68%;
+    }
+    to {
+        left: 32%;
+    }
+
+}
+
+@keyframes move-out-animation {
+    from {
+        left: 32%;
+    }
+    to {
+        left: 68%;
+    }
+
+}
+
+.inAnimation {
+    animation: 1s move-in-animation;
+
+    left: 32%;
+}
+
+.outAnimation {
+    animation: 1s move-out-animation;
+
+    left: 68%;
+}

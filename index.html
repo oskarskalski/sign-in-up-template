@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign-in/Sign-up template</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<main class="page-main">
+    <section class="page-main__form-description">
+        <section class="form-description__sign-in-section">
+            <h2 class="sign-in-section__heading">
+                Sign in
+            </h2>
+            <p class="sign-in-section__content">
+                Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
+            </p>
+            <div class="sign-in-section__sign-up-container">
+                <button class="sign-up-container__go-to-sign-up-section">
+                    Sign up form!
+                </button>
+            </div>
+        </section>
+        <section class="form-description__sign-up-section">
+            <h2 class="sign-up-section__heading">
+                Sign up
+            </h2>
+            <p class="sign-up-section__content">
+                Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sun
+            </p>
+            <div class="sign-up-section__sign-in-container">
+                <button class="sign-in-container__go-to-sign-in-section">
+                    Sign in form!
+                </button>
+            </div>
+        </section>
+    </section>
+    <section class="page-main__form-operations">
+        <section class="form-operations__sign-in">
+            <h2 class="sign-in__heading">
+                Sign in!
+            </h2>
+            <form action="/" method="post" class="frontForm">
+                <div>
+                    <label for="sign-in-username">Username</label>
+                    <input type="text" id="sign-in-username" name="username" class="sign-in__username" required>
+                </div>
+                <div>
+                    <label for="sign-in-password">Password</label>
+                    <input type="password" id="sign-in-password" name="password" class="sign-in__password" required>
+                </div>
+                <div>
+                    <input type="submit" value="Sign in!" class="sign-in__submit">
+                </div>
+            </form>
+        </section>
+        <section class="form-operations__sign-up disabled-section">
+            <h2 class="sign-up__heading">
+                Sign up!
+            </h2>
+            <form action="/" method="post" class="frontForm">
+                <div>
+                    <label for="sign-up-username">Username</label>
+                    <input type="text" id="sign-up-username" name="username" class="sign-up__username" required>
+                </div>
+                <div>
+                    <label for="sign-up-password">Password</label>
+                    <input type="password" id="sign-up-password" name="sign-up-password" class="sign-up__password"
+                           required>
+                </div>
+                <div>
+                    <input type="submit" value="Sign up!" class="sign-up__submit">
+                </div>
+            </form>
+        </section>
+    </section>
+</main>
+<script src="windowHandler.js"></script>
+</body>
+</html>
